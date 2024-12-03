@@ -60,9 +60,13 @@
       document.getElementById("demo").innerHTML = d;
    </script>
    <div ng-app="app" ng-controller="lubemotorlist">
-      <h3 class="text-center text-white p-2" style="background-color: rgb(221, 62, 236)">
+      <h3 class="text-center text-white p-2" style="background-color: rgb(43, 8, 241)">
          ระบบค้นหา MRLB Motor Searching List
       </h3>
+      <nav style="text-align: center">
+         <img src="https://cdn.pixabay.com/photo/2023/04/06/09/19/motor-7903404_1280.jpg" alt="mcc_pic" width="400px" height="250px" />
+         <img src="https://cdn.pixabay.com/photo/2020/04/10/07/08/home-office-5024304_1280.jpg" alt="heat2_pic" width="400px" height="250px" />
+       </nav>
       <div class="row">
          <div class="col-lg-12">
             <table class="table table-hover">
@@ -117,6 +121,9 @@
                      </th>
                      <th scope="col">
                         <input ng-model="s.HEALTH_STATUS" placeholder="HEALTH" class="form-control input-md" />
+                     </th>
+                     <th scope="col">
+                        <input ng-model="s.MOTOR_NO" placeholder="กดดูรายละเอียด" class="form-control input-md" />
                      </th>
                    
                      
